@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FlexGrid Academy | Master Modern Layouts</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Banner/Header -->
+    <header class="page__header">
+        <!-- <span class="material-symbols-outlined" data-icon="menu">menu</span> -->
+        <a href="/">
+            <h1 class="text-accent-dark">FlexGrid Academy</h1>
+        </a>
+        <nav aria-label="Main Navigation">
+            <ul role="list">
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        <button type="button" aria-label="Open user menu" class="material-symbols-outlined text-accent-dark"
+            data-icon="account_circle">account_circle</button>
+    </header>
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__inner">
+                <span class="text-accent">Advanced Layout Mastery</span>
+                <h2>Master the Geometry of <span class="text-accent-light">The Modern Web</span></h2>
+                <p>
+                    A rigorous, technical curriculum designed for engineers who demand precision. Break free from
+                    frameworks and build robust, accessible layouts with pure CSS logic.
+                </p>
+                <div class="hero__actions flex">
+                    <button>Start Learning</button>
+                    <button>View Syllabus</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid -->
+        <section>
+            <h2>Core Curriculum</h2>
+            <div class="spacer mt-2 mb-10"></div>
+            <div class="bento-grid">
+
+                <article>
+                    <header data-type="module">
+                        <div>
+                            <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+                            <h3>Fluid Grid Systems</h3>
+                        </div>
+                        <span class="pill">Module 01</span>
+                    </header>
+                    <p>
+                        Deep dive into fractional units (fr), repeat functions, and the mathematics of responsive
+                        columns without media queries. Master the `grid-template-areas` for semantic layout integrity.
+                    </p>
+                    <footer>
+                        <ul class="pills" role="list">
+                            <li class="pill" data-type="outline">Fractional Units</li>
+                            <li class="pill" data-type="outline">Gap Logic</li>
+                            <li class="pill" data-type="outline">Auto-fit vs Auto-fill</li>
+                        </ul>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <h3>Your Progress</h3>
+                    </header>
+                    <p>Track your journey through the Academy tracks.</p>
+                    <footer>
+                        <div>
+                            <span>Total Completion</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div></div>
+                        </div>
+                    </footer>
+                </article>
+
+                <article>
+                    <header>
+                        <span class="material-symbols-outlined" data-icon="flex_direction">flex_direction</span>
+                        <h3>Flexbox Dynamics</h3>
+                    </header>
+                    <p>
+                        Understanding the axis system. Cross-alignment, growth factors, and shrink ratios for fluid
+                        components.
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <span class="material-symbols-outlined" data-icon="variables">variables</span>
+                        <h3>Variable Logic</h3>
+                    </header>
+                    <p>
+                        Creating design tokens with CSS custom properties for dynamic, themeable layout engines.
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+                        <h3>Layout Sandbox</h3>
+                    </header>
+                    <p>
+                        An integrated development environment for testing your Grid and Flex theories in real-time.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why FlexGrid Section -->
+        <section class="banners">
+
+            <h2>Why FlexGrid Academy?</h2>
+
+            <article class="banner">
+                <img alt="Code visualization"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAwsakVm3_2tqM6PI2sAkJ8ZRfBRZRe_8Dhh2DVdiV9KyFHGYKD1v9G0Wk8dcPPWr1lGIHvp4THKCpGNFmLqRKb97Z7XGuGslJXdkdOMt4c3Xh_-21-LUWQrKSKw-pBVAe1IJwHHXNqi-FojQhtewCgypsqATT82sHyzK374Q3jeJcTToZknuHSiC_55sdbfefYsWeB3EFKYAaoaKWrKz4wMAQEzgRVi4mSG3avlQjHYIFbCLHT3schwK0mGqfItwjEWUQ99QKPbk" />
+
+                <div class="banner-content">
+                    <span>Architecture</span>
+                    <h3>Semantic Integrity</h3>
+                    <p>
+                        We believe that a beautiful layout is nothing without accessibility. Our curriculum starts
+                        with semantic HTML, ensuring your grids are as screen-reader friendly as they are visually
+                        stunning.
+                    </p>
+                </div>
+            </article>
+
+            <article class="banner">
+                <img alt="Performance chart"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB64Ck6yUVrEZHrlUyJOC5jGF1wGD1RxjtaSYsBQxz7Wy4CumFmdbnEUVWsyUyk496Mkx5M7rE6QWMvwP1zgyoYBfaJhu4HVjFIAp2yDcFHicDVb5ob4NV93BL-5McverYVeYbSaA1PaH9WNFszd52HbjC4BqJYBlsXSSulcxJirz4RfXG63IdlKGRDht4YLMzu-QnLiaBfFTZWOsKvYGUzT0l4OpCwME07YN_baH3Ppk72OTpPfTHuURtFK3aCt6hnszEaS1oUxWo" />
+
+                <div class="banner-content">
+                    <span>Performance</span>
+                    <h3>Zero-Framework Speed</h3>
+                    <p>
+                        Frameworks come and go, but the platform is forever. Learn to build enterprise-scale layouts
+                        using native CSS features, resulting in zero-dependency builds and maximum performance for
+                        your users.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to Build the Future?</h2>
+            <p>Join 5,000+ developers mastering the art of layout engineering.</p>
+            <form action="/subscribe" method="POST">
+                <label for="cta-email" class="visually-hidden">Email Address</label>
+                <input id="cta-email" placeholder="Enter your email" type="email" required />
+                <button type="submit">Enroll Now<span class="material-symbols-outlined">
+                        rocket_launch
+                    </span></button>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page__footer">
+        <div>
+            <span>FlexGrid Academy</span>
+            <p>© 2024 FlexGrid Academy. Built for Accessibility.</p>
+        </div>
+        <nav aria-label="Footer Navigation">
+            <ul role="list">
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">WCAG Guide</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+
+        </nav>
+        <ul role="list">
+            <li>
+                <a href="#" class="material-symbols-outlined" data-icon="language"
+                    aria-label="Select Language">language</a>
+            </li>
+            <li>
+                <a href="#" class="material-symbols-outlined" data-icon="share" aria-label="Share page">share</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
