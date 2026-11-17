@@ -1,0 +1,118 @@
+/* These are examples to use together with this tutorial https://www.youtube.com/watch?v=JYfiaSKeYhE */
+/* comment in/out the different groups for the different parts of the video */
+
+/* === RESET / BASE === */
+:root {
+  --primary-color: #4338ea;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+
+/* === For first 4 examples + last (basics, column, alignment, implicit grids, grid-wrapping) === */
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  gap: 1em;
+
+  /* grid-template-areas: "box-1 box-2 box-2 box-3"; */
+
+  .item {
+    /* height: 100px;
+    width: 100px; */
+    padding: 2em;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: .825rem;
+  }
+
+  /* :nth-child(1) {
+    background-color: brown;
+    grid-area: box-1
+  } */
+
+  /* :nth-child(2) {
+    background-color: chocolate;
+    grid-area: box-2
+  } */
+}
+
+
+/* === For Bento Box example === */
+.grid-container-2 {
+  background: #16192440;
+  height: 500px;
+  width: 500px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: "box-1 box-2 box-2 box-3";
+
+  .child-1 {
+    background-color: #006eff;
+  }
+
+  .child-2 {
+    background-color: #c800ff;
+    opacity: 0.5;
+  }
+}
+
+
+/* === For Grid stacking and overlapping === */
+.wrapper {
+  border-radius: 1em;
+  width: 30em;
+  display: grid;
+
+  grid-template-areas: "stack";
+
+  place-items: center;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+
+    grid-area: stack;
+  }
+
+  .text-container {
+    height: max-content;
+    width: 100%;
+    /* width: min(20em, 100%); */
+    padding: 2em;
+    background: rgb(8, 5, 30, 0.5);
+    color: white;
+    border-radius: 1em;
+
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+
+    grid-area: stack;
+  }
+}
