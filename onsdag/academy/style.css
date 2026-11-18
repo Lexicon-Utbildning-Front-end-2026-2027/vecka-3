@@ -163,9 +163,9 @@ h4 {
     font-size: var(--fs-lg);
 }
 
-p {
+/* p {
     color: var(--clr-slate-600);
-}
+} */
 
 a {
     text-decoration: none;
@@ -267,6 +267,11 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
+
 /* screen reader only util */
 .sr-only {
     position: absolute;
@@ -356,6 +361,10 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
     padding-block: calc(var(--spacing-base) * 2);
 }
 
+.py-4 {
+    padding-block: calc(var(--spacing-base) * 4);
+}
+
 .py-10 {
     padding-block: calc(var(--spacing-base) * 10);
 }
@@ -396,14 +405,85 @@ https://www.youtube.com/watch?v=cf-J4ffMBfo
 /* Try this frontend mentor challenge first if you don't want spoilers - https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj */
 .bento-grid {
 
+    display: grid;
+    gap: calc(var(--spacing-base) * 6);
+    /* grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr)); */
+
+    @media (width >=48rem) {
+        grid-template-columns: repeat(3, 1fr);
+
+        [data-type="featured"] {
+            grid-column: span 2;
+        }
+    }
+
     >* {
+        /* background-color: rgb(184, 203, 238); */
         border: 1px solid var(--clr-slate-200);
         padding: calc(var(--spacing-base) * 8);
         border-radius: var(--border-radius-md);
     }
+
+    article {
+        display: grid;
+        align-content: start;
+        gap: 1rem;
+
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto 1fr auto auto;
+
+        grid-template-areas:
+            "icon pill"
+            "heading heading"
+            "body body"
+            "footer footer"
+        ;
+
+        .material-symbols-outlined {
+            grid-area: icon;
+            color: var(--_icon-color, var(--clr-blue-600));
+        }
+
+        h3 {
+            grid-area: heading
+        }
+
+        p {
+            grid-area: body;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        &:nth-child(2) {
+            color: var(--clr-white);
+            background-color: var(--clr-blue-600);
+        }
+
+        &:nth-child(3) {
+            background-color: var(--clr-slate-100);
+        }
+
+        &:nth-child(4) {
+            background-color: var(--clr-slate-200);
+        }
+
+        &:nth-child(5) {
+            color: var(--clr-white);
+            background-color: var(--clr-slate-950);
+
+            --_icon-color: var(--clr-blue-300);
+        }
+    }
+
+
 }
 
-button {
+.button {
+    padding-inline: calc(var(--spacing-base) * 10);
+    padding-block: calc(var(--spacing-base) * 6);
+
     font-weight: var(--fw-extra-bold);
 
     border: 0;
@@ -440,10 +520,10 @@ button {
     }
 }
 
-
 .hero {
     color: var(--clr-white);
     background-color: var(--clr-slate-700);
+    padding-block: 8rem;
 
     h2 {
         font-size: var(--fs-3xl);
@@ -451,6 +531,13 @@ button {
 
     p {
         color: var(--clr-slate-400);
+    }
+
+    .hero__inner {
+        max-inline-size: 60ch;
+        margin-inline: auto;
+
+        text-align: center;
     }
 }
 
@@ -462,13 +549,34 @@ button {
     /* position: sticky;
     top: 0;
     z-index: 1000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     background-color: var(--clr-white);
+
+    nav>ul {
+        display: flex;
+        gap: calc(var(--spacing-base) * 4);
+        padding: calc(var(--spacing-base) * 4);
+
+        a {
+            display: block;
+            padding: calc(var(--spacing-base) * 4);
+        }
+    }
+}
+
+.pills {
+    display: flex;
+    gap: calc(var(--spacing-base) * 4);
+    flex-wrap: wrap;
 }
 
 .pill {
     font-family: var(--ff-mono);
     font-size: var(--fs-sm);
+    white-space: nowrap;
 
     padding-block: calc(var(--spacing-base) * 2);
     padding-inline: calc(var(--spacing-base) * 4);

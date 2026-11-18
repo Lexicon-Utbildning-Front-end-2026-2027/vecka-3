@@ -40,16 +40,16 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero__inner">
+            <div class="hero__inner flow">
                 <span class="text-accent">Advanced Layout Mastery</span>
                 <h2>Master the Geometry of <span class="text-accent-light">The Modern Web</span></h2>
                 <p>
                     A rigorous, technical curriculum designed for engineers who demand precision. Break free from
                     frameworks and build robust, accessible layouts with pure CSS logic.
                 </p>
-                <div class="hero__actions flex">
-                    <button>Start Learning</button>
-                    <button>View Syllabus</button>
+                <div class="flex justify-center gap-6 py-4">
+                    <a href="#" class="button" data-type="secondary">Start Learning</a>
+                    <a href="#" class="button">View Syllabus</a>
                 </div>
             </div>
         </section>
@@ -60,14 +60,10 @@
             <div class="spacer mt-2 mb-10"></div>
             <div class="bento-grid">
 
-                <article>
-                    <header data-type="module">
-                        <div>
-                            <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
-                            <h3>Fluid Grid Systems</h3>
-                        </div>
-                        <span class="pill">Module 01</span>
-                    </header>
+                <article data-type="featured">
+                    <span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+                    <h3>Fluid Grid Systems</h3>
+                    <span class="pill">Module 01</span>
                     <p>
                         Deep dive into fractional units (fr), repeat functions, and the mathematics of responsive
                         columns without media queries. Master the `grid-template-areas` for semantic layout integrity.
@@ -82,9 +78,7 @@
                 </article>
 
                 <article>
-                    <header>
-                        <h3>Your Progress</h3>
-                    </header>
+                    <h3>Your Progress</h3>
                     <p>Track your journey through the Academy tracks.</p>
                     <footer>
                         <div>
@@ -98,10 +92,9 @@
                 </article>
 
                 <article>
-                    <header>
-                        <span class="material-symbols-outlined" data-icon="flex_direction">flex_direction</span>
-                        <h3>Flexbox Dynamics</h3>
-                    </header>
+
+                    <span class="material-symbols-outlined" data-icon="flex_direction">flex_direction</span>
+                    <h3>Flexbox Dynamics</h3>
                     <p>
                         Understanding the axis system. Cross-alignment, growth factors, and shrink ratios for fluid
                         components.
@@ -109,20 +102,16 @@
                 </article>
 
                 <article>
-                    <header>
-                        <span class="material-symbols-outlined" data-icon="variables">variables</span>
-                        <h3>Variable Logic</h3>
-                    </header>
+                    <span class="material-symbols-outlined" data-icon="variables">variables</span>
+                    <h3>Variable Logic</h3>
                     <p>
                         Creating design tokens with CSS custom properties for dynamic, themeable layout engines.
                     </p>
                 </article>
 
                 <article>
-                    <header>
-                        <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
-                        <h3>Layout Sandbox</h3>
-                    </header>
+                    <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+                    <h3>Layout Sandbox</h3>
                     <p>
                         An integrated development environment for testing your Grid and Flex theories in real-time.
                     </p>
