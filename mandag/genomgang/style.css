@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+.cards {
+    background: #ccc;
+}
+
+.card {
+  inline-size: 250px;
+  padding-inline: 20px;
+  margin-block-start: 20px;
+  margin-inline-start: 40px;
+
+  background: lightblue;
+  border: 2px solid blue;
+}
+
+/* .card:first-child {
+    writing-mode: vertical-rl;
+    inline-size: 250px;
+    block-size: 150px;;
+}
+ */
+
+
+.block-demo {
+    background: lightblue;
+    border: 2px solid blue;
+
+}
+
+.inline-demo span {
+    background: yellow;
+    border: 2px solid orange;
+    width: 150px;
+    height: 70px; 
+    padding: 10px;
+    margin: 5px; 
+    display: inline-block;
+}

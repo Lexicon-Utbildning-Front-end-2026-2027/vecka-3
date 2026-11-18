@@ -40,13 +40,7 @@
 
 ## 📅 Tisdag: Flexbox (P)
 
-### 🎯 Mål för dagen
 
-* Förstå CSS Box Model och hur content, padding, border och margin påverkar ett elements storlek och placering.
-* Förstå och använda box-sizing för att styra hur ett elements bredd och höjd beräknas.
-* Förstå skillnaden mellan block- och inline-element och hur de beter sig i dokumentflödet.
-* Förstå och använda logiska CSS-egenskaper och hur riktningarna inline och block används för storlek och avstånd, exempelvis inline-size, margin-inline-start och padding-block-end.
-* Kunna undersöka och felsöka Box Model med hjälp av webbläsarens utvecklarverktyg.
 
 ### 📚 Material
 
@@ -66,9 +60,11 @@
 
 ## 📅 Onsdag: CSS Grid (R)
 
+Innan lektionen se första filmen från Coding2GO och testa med kodexemplet i dagens mapp i veckorepot. Se till att ni förstår grunderna ordentligt. 
+
 ### 🎯 Mål för dagen
 
-* Förstå skillnaderna mellan flex och grid när det gäller  positionering och syfte
+* Välj rätt display - flex eller grid? När har man vad och varför?
 * Kunna använda devtools för att inspektera och felsöka grid-strukturer
 * När ska vi använda auto-fit vs auto-fill och vilken skillnad gör de egentligen?
 * Explicit vs implicit grid - Fatta medvetna beslut kring när man ska ha en dynamisk grid vs ett statiskt grid.
