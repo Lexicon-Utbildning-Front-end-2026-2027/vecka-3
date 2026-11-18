@@ -40,7 +40,13 @@
 
 ## 📅 Tisdag: Flexbox (P)
 
+### 🎯 Mål för dagen
 
+* Förstå CSS Box Model och hur content, padding, border och margin påverkar ett elements storlek och placering.
+* Förstå och använda box-sizing för att styra hur ett elements bredd och höjd beräknas.
+* Förstå skillnaden mellan block- och inline-element och hur de beter sig i dokumentflödet.
+* Förstå och använda logiska CSS-egenskaper och hur riktningarna inline och block används för storlek och avstånd, exempelvis inline-size, margin-inline-start och padding-block-end.
+* Kunna undersöka och felsöka Box Model med hjälp av webbläsarens utvecklarverktyg.
 
 ### 📚 Material
 
@@ -109,10 +115,16 @@ Repetera veckans mål, arbeta med receptsidan och öva på att göra en avvägni
 
 #### 💻 E-Learning
 * [(YT) Kevin Powell - Flexbox or grid - How to decide?](https://www.youtube.com/watch?v=3elGSZSWTbM)
+* [(YT) Kevin Powell - HTML & CSS for Absolute Beginners: Media Query basics - making a layout responsive](https://www.youtube.com/watch?v=QGb-W-c-gIM)
 * [Överkurs - (YT) Kevin Powell - A new approach to container and wrapper classes](https://www.youtube.com/watch?v=c13gpBrnGEw)
+
+#### 📃 Läsning
+* [(MDN) - Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using)
 
 #### 🛠️ Övningar
 * [(MDN) Challenge: Fundamental layout comprehension](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Fundamental_Layout_Comprehension)
+* [(MDN) - Test your skills: Responsive web design and media queries](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Test_your_skills/Responsive_design)
+* [(Pluralsight) - Guided: Responsive Design with Media Queries](https://app.pluralsight.com/code-labs/contents/aef87141-a83d-4946-81bf-315cfb11c2d6/learn)
 
 ---
 
