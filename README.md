@@ -40,14 +40,6 @@
 
 ## 📅 Tisdag: Flexbox (P)
 
-### 🎯 Mål för dagen
-
-* Förstå CSS Box Model och hur content, padding, border och margin påverkar ett elements storlek och placering.
-* Förstå och använda box-sizing för att styra hur ett elements bredd och höjd beräknas.
-* Förstå skillnaden mellan block- och inline-element och hur de beter sig i dokumentflödet.
-* Förstå och använda logiska CSS-egenskaper och hur riktningarna inline och block används för storlek och avstånd, exempelvis inline-size, margin-inline-start och padding-block-end.
-* Kunna undersöka och felsöka Box Model med hjälp av webbläsarens utvecklarverktyg.
-
 ### 📚 Material
 
 #### 💻 E-Learning
